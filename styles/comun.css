@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Grandstander", cursive;
+}
+
+nav,
+main,
+footer {
+  padding: 16px;
+}
+
+nav,
+footer {
+  display: flex;
+  background: #1e88e5;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav * {
+  align-self: center;
+}
+
+nav h1 {
+  color: white;
+}
+
+.menu a {
+  margin: 0px 8px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.menu a:hover {
+  color: yellow;
+  transition: all 1s;
+}
+
+footer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer * {
+  color: white;
+  align-self: center;
+}

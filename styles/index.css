@@ -1,0 +1,60 @@
+main {
+  width: 75%;
+  margin: auto;
+}
+
+main section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 16px 0px;
+}
+
+.personaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: whitesmoke;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0px 1px #1e88e5;
+}
+
+.personaje * {
+  align-self: center;
+  margin: 8px 0px;
+}
+
+.personaje label {
+  font-size: 2em;
+}
+
+.personaje img {
+  width: 50%;
+}
+
+.personaje button {
+  padding: 8px;
+  background: gold;
+  border: 1px solid goldenrod;
+  border-radius: 16px;
+}
+
+.personaje button:hover {
+  background: #1e88e5;
+  color: white;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+}
+
+@media (max-width: 750px) {
+  main section {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0px;
+  }
+
+  .personaje {
+    margin: 8px 0px;
+  }
+}
